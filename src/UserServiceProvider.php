@@ -11,8 +11,6 @@ class UserServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-user')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigrations();
+            ->hasMigration('create_users_table');
     }
 }
